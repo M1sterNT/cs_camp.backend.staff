@@ -21,7 +21,6 @@ app.use((req, res, next) => {
     next(err);
 });
 
-
 if (app.get('env') === 'development') {
     app.use((err, req, res, next) => {
         res.status(err.status || 500);
