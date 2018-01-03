@@ -1,11 +1,12 @@
 {
   "dependencies": {
+    "babel": "^5.8.21",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^6.1.2",
+    "eslint": "^3.19.0",
     "express": "^4.16.2",
     "firebase": "^4.8.1",
-    "validator": "^9.2.0",
-    "babel": "^5.8.21",
-    "babel-eslint": "^6.1.2",
-    "eslint": "^3.19.0"
+    "validator": "^9.2.0"
   },
   "scripts": {
     "lint": "eslint app.js",
