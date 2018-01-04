@@ -1,7 +1,6 @@
 import validator from 'validator';
 import firebase from '../../config/firebase';
 const SaveData = async (req, res, next) => {
-    res.status(200).json({ success: true, value: req })
     let CheckInt = ['01', '02', '03', '04', '05', '06', '07', '08', '09']
     if (validator.isInt(req.body.div_id) && req.body.div_id <= 15) {
         if (CheckInt.indexOf(req.body.div_id) == -1 &&  req.body.div_id < 10) {
