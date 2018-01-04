@@ -1,5 +1,5 @@
 import validator from 'validator';
-import firebase from '../config/firebase';
+import firebase from '../../config/firebase';
 const Total = async (req, res, next) => {
     let CheckInt = ['01', '02', '03', '04', '05', '06', '07', '08', '09']
     if (validator.isInt(req.params.id) && req.params.id <= 15) {
