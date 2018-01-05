@@ -7,4 +7,5 @@ let api = express.Router();
 /* GET API TOTAL. */
 api.get('/api/total/:id', Total);
 api.post('/api/save', savedata);
+
 module.exports = api;

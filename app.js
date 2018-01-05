@@ -1,10 +1,15 @@
 "use strict";
 import express from 'express';
+import bodyParser from 'body-parser';
 import web  from './route/web';
 import api  from './route/api';
 
 //using let
 let app = express();
+
+// set body
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 //route
 app.use('/', web);
